@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROM ME (Intan J)</title>
+    <style>
+        body {
+            background-color: #6f9c70; /* Warna latar belakang hijau muda */
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Mengganti font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Mengatur arah kolom */
+            align-items: center; /* Mengatur agar kertas berada di tengah */
+            height: auto; /* Mengatur tinggi otomatis untuk konten */
+        }
+
+        .kertas {
+            background: rgba(127, 195, 218, 0.9); /* Warna kertas biru muda */
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            border: 2px solid #181b1e; /* Border biru tua */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+            animation: move 5s ease-in-out infinite; /* Efek animasi */
+            margin: 100px 0; /* Jarak antar kertas */
+            text-align: center; /* Menyelaraskan teks ke tengah */
+        }
+
+        .kertas-bergerak {
+            animation: slideIn 1s ease-out forwards, move 5s ease-in-out infinite; /* Animasi sliding dan bergerak */
+            visibility: hidden; /* Mengatur visibilitas awal */
+        }
+
+        .contact {
+            background: rgba(255, 255, 255, 0.9); /* Warna latar belakang untuk contact */
+            color: #000; /* Warna teks hitam */
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center; /* Menyelaraskan teks ke tengah */
+            position: relative; /* Untuk animasi */
+            visibility: hidden; /* Mengatur visibilitas awal */
+            animation: slideInContact 1s ease-out forwards; /* Animasi sliding */
+        }
+
+        .kertas-keempat {
+            animation: slideIn 1s ease-out forwards, move 5s ease-in-out infinite; /* Animasi sliding dan bergerak */
+            visibility: hidden; /* Mengatur visibilitas awal */
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%); /* Mulai dari luar layar di kiri */
+                visibility: visible; /* Menampilkan saat masuk */
+            }
+            100% {
+                transform: translateX(0); /* Berhenti di posisi normal */
+            }
+        }
+
+        @keyframes slideInContact {
+            0% {
+                transform: translateX(100%); /* Mulai dari luar layar di kanan */
+                visibility: visible; /* Menampilkan saat masuk */
+            }
+            100% {
+                transform: translateX(0); /* Berhenti di posisi normal */
+            }
+        }
+
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        h1 {
+            font-weight: bold; /* Menebalkan teks */
+            color: #0d47a1; /* Warna judul */
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .p1 { color: #57013c; } /* Warna teks untuk paragraf 1 */
+        .p2 { color: #a027d0; } /* Warna teks untuk paragraf 2 */
+        .p3 { color: #120e4e; } /* Warna teks untuk paragraf 3 */
+        .p4 { color: #1b7d14; } /* Warna teks untuk paragraf 4 */
+
+        a {
+            color: #1976d2; /* Warna link biru */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact h2 {
+            margin-bottom: 10px;
+            color: #0d47a1; /* Warna judul contact */
+        }
+    </style>
+</head>
+<body>
+    <div class="kertas">
+        <h1>HAII MBAK MIKAAAWW!</h1>
+        <p class="p1">Selamat Datang di Website Intan J</p>
+        <p class="p2">next>>></p>
+    </div>
+
+    
+    <div class="kertas">
+        <h1>Oke lanjut...</h1>
+        <p class="p3">Gimana kabarmu mbak?
+            Seru dak balik dusun nyo?</p>
+        <p class="p4">Haha pasti seru lah yo mbak, ketemu kek ortu kek keluargo yang lain^^</p>
+        <p class="p1">next>>></p>
+    </div>
+
+    <div class="kertas kertas-bergerak">
+        <h1>stop duluuuu</h1>
+        <p class="p2">Tau ga Tujuan aku buat ini apa?</p>
+        <p class="p3">Haaa gatau kan? yaudah scroll lagi</p>
+        <p class="p4">Next>>></p>
+    </div>
+
+    <div class="kertas kertas-keempat">
+        <h1>stopp lagi</h1>
+        <p class="p1">Aduhh cak mano yo ngeceknyo...</p>
+        <p class="p2">baca ajolah di bawah ni wkwk</p>
+        <p class="p3">Next>>></p>
+    </div>
+
+    <div class="kertas">
+        <h1>NAHH INI PUNCAKNYA</h1>
+        <p class="p4">Duh tapi kayaknyo dak muat mbak, terlalu panjang ini :v</p>
+        <p class="p4">Baca dibawah ini ajo mbak, jangan tegelak tp WKWKWK. </p>
+        <p><a href="https://drive.google.com/file/d/1-n0oE5-N0YysKew8Ppxo-yLuKtpgrd4b/view?usp=drivesdk " target="_blank">Tekan Disini</a></p>
+    </div>
+    <div class="contact">
+        <h2>My Contact</h2>
+        <p class="p4">Udah baconyo? haa ko wa ku dibawah ni</p>
+        <p class="p1">WA : <a href="mailto:contact@example.com">+6285809439591</a></p>
+        <p class="p4">maaf mbak kalo aku ni banyak tanyo kek kau, sebab aku bingung ini tuh🙏🏻😭</p>
+        <p class="p2">by pacar linyi :v</p>
+    </div>
+    
+    <script>
+        // Mengatur durasi sebelum kertas ketiga muncul
+        setTimeout(() => {
+            document.querySelector('.kertas-bergerak').style.visibility = 'visible';
+        }, 1000); // 1 detik
+
+        // Mengatur durasi sebelum kertas keempat muncul
+        setTimeout(() => {
+            document.querySelector('.kertas-keempat').style.visibility = 'visible';
+        }, 2000); // 2 detik
+
+        // Mengatur durasi sebelum contact muncul
+        setTimeout(() => {
+            document.querySelector('.contact').style.visibility = 'visible';
+        }, 3000); // 3 detik
+    </script>
+</body>
+</html>
